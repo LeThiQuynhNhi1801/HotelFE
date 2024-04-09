@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hotelbooking"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ManagePointActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ExchangepointActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".MyVoucherActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".HistoryPointActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+</manifest>

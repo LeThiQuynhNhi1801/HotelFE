@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <!-- TextView để hiển thị tiêu đề -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CÀI ĐẶT THÔNG BÁO"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:layout_gravity="center"
+            android:shadowColor="#80000000"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sự kiện"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Thông báo check in"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:shadowColor="#80000000"/>
+
+        <Switch
+            android:id="@+id/checkinSwitch"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Báo trước giờ check in"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:shadowColor="#80000000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Thông báo thay đổi phòng"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:shadowColor="#80000000"/>
+
+        <Switch
+            android:id="@+id/roomChangeSwitch"
+            android:layout_width="178dp"
+            android:layout_height="52dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm thưởng"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Thông báo cộng - trừ điểm thưởng"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:shadowColor="#80000000"/>
+
+        <Switch
+            android:id="@+id/pointSwitch"
+            android:layout_width="282dp"
+            android:layout_height="49dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:text="Cài đặt"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

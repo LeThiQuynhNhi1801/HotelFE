@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại phòng:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phòng đơn" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDouble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phòng đôi" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textPriceRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khoảng giá:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPriceRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-200k" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200k-500k" />
+    </RadioGroup>
+
+</LinearLayout>

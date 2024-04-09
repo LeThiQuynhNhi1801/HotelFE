@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Khối thông tin hóa đơn -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invoice_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_border"
+    android:padding="16dp"
+    android:layout_below="@id/room_info_layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/invoiceTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN HÓA ĐƠN"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/billCodeTextView"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="CCCD/Hộ chiếu: 1234567890"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="CCCD/Hộ chiếu: 1234567890"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/vatTextView"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="CCCD/Hộ chiếu: 1234567890"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/grossTextView"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="CCCD/Hộ chiếu: 1234567890"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>
